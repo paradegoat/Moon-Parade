@@ -1,0 +1,29 @@
+
+<div class="container portfolio-form">
+  <div class="row">
+
+    <div class="col-md-9">
+      <%= image_tag portfolio_img(@portfolio_item.thumb_image, 'main'), width: '100%'  %>
+    </div>
+
+    <div class="col-md-3">
+      <h1 class="single-image-title"><%= @portfolio_item.title %></h1>
+
+      <hr>
+
+      <em class="single-image-subtitle"><%= @portfolio_item.subtitle %></em>
+
+      <p class="single-image-body"><%= @portfolio_item.body %></p>
+
+      <hr>
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+</div>

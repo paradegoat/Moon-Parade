@@ -1,0 +1,112 @@
+@import "bootstrap";
+@import "jquery-ui";
+@import "font-awesome";
+
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #fff;
+
+}
+
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+/*
+ * Custom styles
+ */
+
+ /*
+ font-family: 'Amatic SC', cursive;
+ font-family: 'Poiret One', cursive;
+ font-family: 'Playfair Display SC', serif;
+ font-family: 'Monoton', cursive;
+ font-family: 'Julius Sans One', sans-serif;
+ */
+
+.social-links {
+  font-size: 2.5em;
+}
+
+a {color:rgb(202, 247, 212);}      /* unvisited link */
+a:visited {color:rgb(100, 99, 105);}  /* visited link */
+a:hover {color:rgb(202, 247, 212);}  /* mouse over link */
+a:active {color:rgb(100, 99, 105);}  /* selected link */
+
+.portfolio-form {
+   padding: 20px;
+}
+
+
+.card-body{
+  font-family: 'Poiret One', cursive;
+}
+
+.about-section{
+  font-family: 'Poiret One', cursive;
+}
+
+.title-spot{
+  font-family: 'Poiret One', cursive;
+}
+
+.single-image-title{
+    font-family: 'Poiret One', cursive;
+}
+
+.single-image-subtitle{
+  font-family: 'Poiret One', cursive;
+}
+
+.single-image-body{
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.copyright{
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.portfolio-form {
+  padding-top: 40px;
+}
+
+.carousel-box{
+  padding-top: 40px;
+}
+
+.hey-hey{
+  height: 30vw;
+}
