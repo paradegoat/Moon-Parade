@@ -1,7 +1,14 @@
 <hr />
 <%= link_to "Create New Item", new_portfolio_url if logged_in?(:site_admin) %>
+<div class="float-right">
+  <%= login_helper 'nav-link' if logged_in?(:site_admin) %>
+</div>
 <hr />
-<%= login_helper 'nav-link' if logged_in?(:site_admin) %>
+<div class="text-center">
+<h1 class="title-spot">Homecoming <br /> Spirit</h1>
+</div>
+<hr />
+<hr />
 
 <%= render 'shared/portfolio_carousel' %>
 

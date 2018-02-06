@@ -62,7 +62,7 @@ footer p {
   font-size: 2.5em;
 }
 
-a {color:rgb(202, 247, 212);}      /* unvisited link */
+a {color:rgb(100, 99, 105);}      /* unvisited link */
 a:visited {color:rgb(100, 99, 105);}  /* visited link */
 a:hover {color:rgb(202, 247, 212);}  /* mouse over link */
 a:active {color:rgb(100, 99, 105);}  /* selected link */
@@ -71,6 +71,14 @@ a:active {color:rgb(100, 99, 105);}  /* selected link */
    padding: 20px;
 }
 
+.card{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
 
 .card-body{
   font-family: 'Poiret One', cursive;
@@ -80,8 +88,14 @@ a:active {color:rgb(100, 99, 105);}  /* selected link */
   font-family: 'Poiret One', cursive;
 }
 
-.title-spot{
+.nav-title-spot{
   font-family: 'Poiret One', cursive;
+}
+
+.title-spot{
+  font-family: 'Monoton', cursive;
+  font-weight: lighter;
+  font-size: 8vw;
 }
 
 .single-image-title{
