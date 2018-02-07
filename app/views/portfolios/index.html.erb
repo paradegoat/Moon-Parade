@@ -5,7 +5,7 @@
 </div>
 <hr />
 <div class="text-center">
-<h1 class="title-spot">Homecoming <br /> Spirit</h1>
+  <h1 class="title-spot text-muted">Homecoming <br /> Spirit</h1>
 </div>
 <hr />
 <hr />
@@ -15,13 +15,7 @@
 <div class="album py-5 bg-light">
   <div class="container">
     <div class="row <%="sortable" if logged_in?(:site_admin) %>">
-
-
         <%= render partial: 'portfolio_item', collection: @portfolio_items %>
-
-
-
     </div>
-
   </div>
 </div>

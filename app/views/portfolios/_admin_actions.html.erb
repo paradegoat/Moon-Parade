@@ -1,0 +1,6 @@
+<% if logged_in?(:site_admin) %>
+   <nav class="breadcrumb portcrumb">
+     <%= link_to fa_icon('pencil-square-o'), edit_portfolio_path(@portfolio_item) %>
+     <%= link_to fa_icon('trash'), portfolio, method: :delete, data: { confirm: 'Are you sure?' } %>
+   </nav>
+ <% end %>
