@@ -1,8 +1,11 @@
 
 <div class="container portfolio-form">
   <div class="row">
+    <p class=" back-arrow">
+      <%= link_to (fa_icon "arrow-circle-o-left"), portfolios_path %>
+    </p>
 
-    <div class="col-md-9">
+    <div class="col-md-8">
       <%= image_tag portfolio_img(@portfolio_item.thumb_image, 'main'), width: '100%'  %>
     </div>
 
