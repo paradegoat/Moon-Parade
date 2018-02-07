@@ -13,7 +13,8 @@
 
       <div class="form-group">
         <label class="btn btn-primary">
-          Upload a image file <%= f.file_field :thumb_image, style: 'display:none;' %>
+          <%= f.file_field :thumb_image %><br />
+          -- only jpg, jpeg, gif, or png files --
         </label>
       </div>
     </div>
