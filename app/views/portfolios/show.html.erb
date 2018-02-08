@@ -1,17 +1,17 @@
 
-<div class="container portfolio-form">
+<div class="container-fluid portfolio-form">
   <div class="row">
-    <p class=" back-arrow">
-      <%= link_to (fa_icon "arrow-circle-o-left"), portfolios_path %>
-    </p>
 
-    <div class="col-md-8">
+    <div class="col-md-9">
+
       <%= image_tag portfolio_img(@portfolio_item.thumb_image, 'main'), width: '100%'  %>
     </div>
 
     <div class="col-md-3">
+      <p class="back-arrow text-right">
+        <%= link_to (fa_icon "arrow-circle-o-left"), portfolios_path %>
+      </p>
       <h1 class="single-image-title"><%= @portfolio_item.title %></h1>
-
       <hr>
 
       <em class="single-image-subtitle"><%= @portfolio_item.subtitle %></em>
