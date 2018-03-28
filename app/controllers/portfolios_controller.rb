@@ -24,7 +24,7 @@ class PortfoliosController < ApplicationController
 
    respond_to do |format|
      if @portfolio_item.save
-       format.html { redirect_to portfolios_path, notice: 'Your portfolio item is now live.' }
+       format.html { redirect_to collections_path, notice: 'boop beep photo saved beep boop.' }
      else
        format.html { render :new }
      end
@@ -39,7 +39,7 @@ class PortfoliosController < ApplicationController
 
     respond_to do |format|
       if @portfolio_item.update(portfolio_params)
-        format.html { redirect_to portfolios_path, notice: 'The record successfully updated.' }
+        format.html { redirect_to collections_path, notice: 'The photo was successfully updated.' }
       else
         format.html { render :edit }
       end
@@ -57,7 +57,7 @@ class PortfoliosController < ApplicationController
 
     # Redirect
     respond_to do |format|
-      format.html { redirect_to portfolios_url, notice: 'Record was removed.' }
+      format.html { redirect_to portfolios_url, notice: 'photo was removed.' }
     end
   end
   private

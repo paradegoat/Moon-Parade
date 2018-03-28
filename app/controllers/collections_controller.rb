@@ -18,7 +18,7 @@ class CollectionsController < ApplicationController
     @collection = Collection.new(collection_params)
     respond_to do |format|
       if @collection.save
-        format.html { redirect_to @collection, notice: 'Collection was successfully created.' }
+        format.html { redirect_to collections_url, notice: 'Collection was successfully created.' }
       else
         format.html { render :new }
       end

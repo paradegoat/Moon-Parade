@@ -1,32 +1,21 @@
-
 <div class="container-fluid portfolio-form">
   <div class="row">
-
     <div class="col-md-9">
-
       <%= image_tag portfolio_img(@portfolio_item.thumb_image, 'main'), width: '100%'  %>
     </div>
-
     <div class="col-md-3">
       <p class="back-arrow text-right">
-        <%= link_to (fa_icon "arrow-circle-o-left"), portfolios_path %>
+        <%= link_to (fa_icon "arrow-circle-o-left"), collection_path(@portfolio_item.collection) %>
       </p>
       <h1 class="single-image-title"><%= @portfolio_item.title %></h1>
       <p>
         <%= @portfolio_item.collection.title %>
       </p>
       <hr>
-
       <em class="single-image-subtitle"><%= @portfolio_item.subtitle %></em>
-
       <p class="single-image-body"><%= @portfolio_item.body %></p>
-
       <hr>
-
     </div>
-
   </div>
   <%= render partial: 'portfolios/admin_actions', locals: { portfolio: @portfolio_item } %>
-
-
 </div>
