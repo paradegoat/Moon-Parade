@@ -1,0 +1,11 @@
+<%= render partial: 'collections/admin_actions', locals: { collection: @collection } %>
+<div>
+  <h1><%= @collection.title %></h1>
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row <%="sortable" if logged_in?(:site_admin) %>">
+          <%= render partial: 'portfolio_item', collection: @portfolio_items %>
+      </div>
+    </div>
+  </div>
+</div>
