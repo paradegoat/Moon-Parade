@@ -15,7 +15,6 @@
          <%= f.label :collection_id %>
          <%= f.collection_select(:collection_id, Collection.all, :id, :title,
                                    {
-                                     selected: portfolio_item.collection.id,
                                      include_blank: true
                                    },
                                    class: 'form-control'

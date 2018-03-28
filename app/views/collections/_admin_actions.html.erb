@@ -1,0 +1,5 @@
+<% if logged_in?(:site_admin) %>
+   <nav class="breadcrumb portcrumb">
+     <%= link_to fa_icon('trash'), @collection, method: :delete, data: { confirm: 'Are you sure?' } %>
+   </nav>
+ <% end %>
