@@ -2,7 +2,7 @@ class Portfolio < ApplicationRecord
   extend FriendlyId
   friendly_id :title, use: :slugged
 
-   validates_presence_of :title, :body
+   validates_presence_of :title, :body, :collection_id
 
   mount_uploader :thumb_image, PortfolioUploader
   mount_uploader :main_image, PortfolioUploader

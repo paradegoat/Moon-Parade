@@ -73,6 +73,7 @@ class PortfoliosController < ApplicationController
                                       :body,
                                       :main_image,
                                       :thumb_image,
+                                      :collection_id
                                      )
   end
 end

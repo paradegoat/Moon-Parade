@@ -12,6 +12,9 @@
         <%= link_to (fa_icon "arrow-circle-o-left"), portfolios_path %>
       </p>
       <h1 class="single-image-title"><%= @portfolio_item.title %></h1>
+      <p>
+        <%= @portfolio_item.collection.title %>
+      </p>
       <hr>
 
       <em class="single-image-subtitle"><%= @portfolio_item.subtitle %></em>
