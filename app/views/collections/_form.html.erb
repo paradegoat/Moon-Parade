@@ -9,6 +9,10 @@
     <%= f.text_field :title, class: 'form-control', placeholder: "Title" %>
   </div>
   <div class="form-group">
-      <%= f.submit "Submit", class: 'btn btn-primary' %>
-    </div>
+    <%= f.file_field :main_image %>
+  </div>
+  <div class="form-group">
+    <%= f.submit "Submit", class: 'btn btn-primary' %>
+  </div>
+
 <% end %>
