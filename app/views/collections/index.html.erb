@@ -3,13 +3,14 @@
   <%= login_helper 'nav-link' if logged_in?(:site_admin) %>
 </div>
 <div class="text-center">
-  <h1 class="title-spot text-muted">Homecoming <br /> Spirit</h1>
+  <h1 class="title-spot text-muted">Homecoming Spirit</h1>
 </div>
 
 
-<%= render 'shared/portfolio_carousel' %>
+<%= render 'shared/collection_carousel' %>
 
-
-<div class="row justify-content-around">
-  <%= render @collections %>
+<div class="container">
+  <div class="row justify-content-around">
+    <%= render @collections %>
+  </div>
 </div>
