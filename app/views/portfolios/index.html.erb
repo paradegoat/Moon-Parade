@@ -1,17 +1,3 @@
-<hr />
-<%= link_to "Create New Item", new_portfolio_url if logged_in?(:site_admin) %>
-<div class="float-right">
-  <%= login_helper 'nav-link' if logged_in?(:site_admin) %>
-</div>
-<hr />
-<div class="text-center">
-  <h1 class="title-spot text-muted">Homecoming Spirit</h1>
-</div>
-<hr />
-<hr />
-
-<%= render 'shared/portfolio_carousel' %>
-
 <div class="album py-5 bg-light">
   <div class="container">
     <div class="row <%="sortable" if logged_in?(:site_admin) %>">

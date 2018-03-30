@@ -6,7 +6,7 @@
   <title><%= @page_title %></title>
   <%= csrf_meta_tags %>
 
-<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Julius+Sans+One|Monoton|Playfair+Display+SC|Poiret+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Julius+Sans+One|Monoton|Playfair+Display+SC|Poiret+One" rel="stylesheet">
 
   <meta name="keywords" content="<%= @seo_keywords %>" />
 
@@ -15,10 +15,11 @@
 </head>
 
 <body>
-
   <%= render 'shared/portfolio_nav' %>
 
-  <!-- <%= login_helper %> -->
+  <%= render 'shared/application_masthead' %>
+
+  <%= render 'shared/application_carousel' %>
 
   <%= yield %>
 
