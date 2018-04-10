@@ -141,6 +141,7 @@ GEM
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     multi_json (1.13.1)
+    newrelic_rpm (5.0.0.342)
     nio4r (2.2.0)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
@@ -248,6 +249,7 @@ DEPENDENCIES
   kaminari (~> 1.0, >= 1.0.1)
   listen (>= 3.0.5, < 3.2)
   mini_magick (~> 4.6)
+  newrelic_rpm
   petergate (~> 1.8, >= 1.8.1)
   pg (~> 0.18)
   puma (~> 3.7)

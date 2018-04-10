@@ -62,5 +62,5 @@ gem 'carrierwave', '~> 1.0'
 gem 'mini_magick', '~> 4.6'
 gem 'carrierwave-aws', '~> 1.0', '>= 1.0.2'
 gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
-
+gem 'newrelic_rpm'
 ruby "2.4.0"
