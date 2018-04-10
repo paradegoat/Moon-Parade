@@ -1,11 +1,10 @@
-<a href="<%= collection_path(collection) %>">
 <div class="card col-lg-5 col-md-7 col-sm-7 polaroid">
+  <a href="<%= collection_path(collection) %>">
   <div class="card-img-top" alt="Card image cap">
-
       <%= image_tag collection.main_image, width: '100%' %>
   </div>
   <div class="card-body">
     <h5 class="card-title text-center"><span><%= link_to collection.title, collection_path(collection) %> collection</span></h5>
   </div>
-</div>
 </a>
+</div>
