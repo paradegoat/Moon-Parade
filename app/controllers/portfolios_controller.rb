@@ -57,7 +57,7 @@ class PortfoliosController < ApplicationController
 
     # Redirect
     respond_to do |format|
-      format.html { redirect_to portfolios_url, notice: 'photo was removed.' }
+      format.html { redirect_to collections_url, notice: 'photo was removed.' }
     end
   end
   private
