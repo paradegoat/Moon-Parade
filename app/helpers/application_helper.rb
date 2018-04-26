@@ -17,6 +17,19 @@ module ApplicationHelper
   def image_link_to(image_path, url, image_tag_options = { }, link_to_options = { })
   link_to url, link_to_options do
     image_tag image_path, image_tag_options
+    end
   end
-end
+
+def alerts
+   alert = (flash[:alert] || flash[:error] || flash[:notice])
+
+   if alert
+     alert_generator alert
+   end
+ end
+
+ def alert_generator msg
+   js add_gritter(msg, title: "Homecoming Spirit", sticky: false)
+ end
+
 end

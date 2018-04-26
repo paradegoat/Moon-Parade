@@ -1,8 +1,0 @@
-
-<% if flash[:alert] %>
-  <%= js add_gritter(flash[:alert], title: "Homecoming Spirit", sticky: false) %>
-<% elsif flash[:error] %>
-  <%= js add_gritter(flash[:error], title: "Homecoming Spirit", sticky: false) %>
-<% else %>
-  <%= js add_gritter(flash[:notice], title: "Homecoming Spirit", sticky: false) %>
-<% end %>
