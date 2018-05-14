@@ -15,18 +15,18 @@
 </head>
 
 <body>
-  <%= render 'shared/portfolio_nav' %>
+  <%= render 'shared/application_nav' %>
 
   <%= render 'shared/application_masthead' %>
 
-  <!-- <%= render 'shared/application_carousel' %> -->
+  <%= render 'shared/application_carousel' %>
 
   <%= yield %>
 
   <%= render 'shared/portfolio_footer' %>
 
   <%= alerts %>
-  
+
   <%= source_helper("application") %>
 </body>
 </html>
