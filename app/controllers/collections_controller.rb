@@ -1,6 +1,6 @@
 class CollectionsController < ApplicationController
   before_action :set_collection, only: [:show, :edit, :update, :destroy]
-  layout 'collections'
+  layout 'portfolio'
   def index
     @collections = Collection.all
   end

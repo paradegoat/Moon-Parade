@@ -13,20 +13,19 @@
   <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
-
 <body>
 
-  <%= render 'shared/application_nav' %>
+<%= render 'shared/application_nav' %>
 
-  <%= render 'shared/application_masthead' %>
+<%= render 'shared/application_masthead' %>
 
-  <%= yield %>
+<%= yield %>
 
-  <%= render "shared/application_footer" %>
+<%= render "shared/application_footer" %>
 
-  <%= alerts %>
+<%= alerts %>
 
-  <%= source_helper("application") %>
+<%= source_helper("application") %>
 
 </body>
 </html>

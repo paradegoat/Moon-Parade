@@ -1,5 +1,4 @@
 class PagesController < ApplicationController
-  layout 'portfolio'
   def home
     @posts = Portfolio.all
   end
